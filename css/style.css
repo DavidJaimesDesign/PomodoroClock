@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+body{
+  background-color: #98BDE7;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+h1 {
+  margin: 0 0 35px;
+	text-align: center;
+	color: white;
+  font-family: 'Pacifico', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+	font-size: 5em;
+}
+
+#clockdiv{
+	color:white;
+	text-align:center;
+	font-family: "Helvetica Neue", Helvetica;
+	font-size: 4em;
+}
+
+.timer_set{
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.btn-md {
+	width: 167px;
+}

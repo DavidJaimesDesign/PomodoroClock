@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class = "container">
+		<div class = "row">
+			<h1>Pomodoro Time!</h1>
+		</div>
+	
+		<div class = "row">
+			<!--Timer goes here -->
+			<div class = "col-md-12">
+				<div id = "clockdiv"></div>
+			</div>
+		</div>
+	
+		<div class = "row">
+			<!--break and timer setup-->
+			<div class = "col-md-12">
+        <div class = "row">
+          <div class = "col-md-2 col-md-offset-3 timer_set">
+         		<div class = "input-group">
+          		<span class="input-group-btn">
+              	<button type="button" class="quantity-left-minus_timer btn btn-number"  data-type="minus" data-field="">
+                	<span class="glyphicon glyphicon-minus"></span>
+                </button>
+              </span>
+              <input type="text" id="quantity_timer" name="quantity" class="form-control input-number" value="25" min="1" max="100">
+              <span class="input-group-btn">
+             		<button type="button" class="quantity-right-plus_timer btn btn-number" data-type="plus" data-field="">
+               	 <span class="glyphicon glyphicon-plus"></span>
+                </button>
+              </span>
+      			</div>
+          </div>
+					<div class = "col-md-2 col-md-offset-2 timer_set">
+						<div class = "input-group">
+          		<span class="input-group-btn">
+              	<button type="button" class="quantity-left-minus_break btn btn-number"  data-type="minus" data-field="">
+                	<span class="glyphicon glyphicon-minus"></span>
+                </button>
+              </span>
+              <input type="text" id="quantity_break" name="quantity" class="form-control input-number" value="5" min="1" max="100">
+              <span class="input-group-btn">
+             		<button type="button" class="quantity-right-plus_break btn btn-number" data-type="plus" data-field="">
+               	 <span class="glyphicon glyphicon-plus"></span>
+                </button>
+              </span>
+      			</div>
+					</div>
+        </div>
+      </div>
+		</div>
+		<div class = "row">
+			<!--Timer buttons -->
+			<div class = "col-md-12">
+				<div class = "row">
+					<div class = "col-md-3 col-md-offset-3">
+						<input type = "button" value = "START TIMER" class = "btn btn-md" id = "start_timer">
+					</div>
+					<div class = "col-md-3 col-md-offset-1">
+						<input type = "button" value = "START BREAK" class = "btn btn-md" id = "start_break">
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
